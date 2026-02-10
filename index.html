@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acceso | CineCasa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page page--login">
+      <section class="card">
+        <p class="eyebrow">Servidor personal</p>
+        <h1>Bienvenido a CineCasa</h1>
+        <p class="subtitle">
+          Inicia sesión para entrar a tu catálogo privado de series y películas.
+        </p>
+
+        <form id="loginForm" class="form" autocomplete="off">
+          <label for="username">Usuario</label>
+          <input id="username" name="username" type="text" placeholder="Ej: admin" required />
+
+          <label for="password">Contraseña</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Escribe tu contraseña"
+            required
+          />
+
+          <button type="submit">Entrar al servidor</button>
+          <p id="feedback" class="feedback" aria-live="polite"></p>
+        </form>
+
+        <p class="hint">Credenciales demo: <strong>admin / cine123</strong></p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
